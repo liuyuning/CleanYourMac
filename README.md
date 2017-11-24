@@ -11,5 +11,5 @@ Run a script to clean your mac
 $sh CleanYourMac.sh
 ```
 
-Part of log:
+#### 2. Part of log:
 ![](log.jpg)
