@@ -1,5 +1,5 @@
 # CleanYourMac
-Run a script to clean your mac
+Run a script to clean your mac, it will clean more space than CleanMyMac.
 
 ℹ️Will remove Xcode downloaded Simulator and symbol of iOS Device.
 
