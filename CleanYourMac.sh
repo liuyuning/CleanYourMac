@@ -6,7 +6,7 @@
 
 INFO_BEFORE=$(df -lh)
 
-mv ~/Library/Developer/Xcode/UserData/FontAndColorThemes ~/
+mv ~/Library/Developer/Xcode/UserData ~/
 
 sudo rm -rf /private/var/folders/*
 sudo rm -rf /Library/Developer/ ~/Library/Developer/
@@ -23,8 +23,8 @@ sudo rm -rf /System/Library/Caches/com.apple.coresymbolicationd
 #apache log dir
 sudo mkdir  /var/log/apache2/
 
-mkdir -p  ~/Library/Developer/Xcode/UserData/
-mv ~/FontAndColorThemes ~/Library/Developer/Xcode/UserData/
+mkdir -p  ~/Library/Developer/Xcode/
+mv ~/UserData ~/Library/Developer/Xcode/
 
 #GarageBand 音乐创作
 #https://www.tekrevue.com/tip/delete-garageband/
