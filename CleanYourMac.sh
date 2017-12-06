@@ -30,7 +30,7 @@ sudo mkdir  /var/log/apache2/
 #.../Assets.xcassets: Failed to launch IBCocoaTouchImageCatalogTool via CoreSimulator spawn
 #Interface Builder Storyboard Compiler Error Group
 #.../Base.lproj/LaunchScreen.storyboard: Internal error. Please file a bug at bugreport.apple.com and attach "/var/folders/5f/0s8jnpp513l9y48q4z1thx6m0000gn/T/IB-agent-diagnostics_2017-12-06_15-40-01_656000".
-sudo mkdir ~/Library/Logs/
+mkdir ~/Library/Logs/
 sudo chmod 755 ~/Library/Logs/
 
 mkdir -p  ~/Library/Developer/Xcode/
