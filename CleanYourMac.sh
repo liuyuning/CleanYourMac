@@ -16,7 +16,8 @@ sudo rm -rf ~/Library/iTunes
 
 sudo rm -rf /Library/SystemMigration/
 sudo rm -rf  /private/var/tmp/
-
+sudo mkdir /private/var/tmp/
+sudo chmod 1777 /private/var/tmp/
 
 sudo rm -rf /System/Library/Caches/com.apple.coresymbolicationd
 
