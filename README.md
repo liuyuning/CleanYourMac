@@ -8,7 +8,7 @@ Run a script to clean your mac, it will clean more space than CleanMyMac.
 #### 1. Usage:
 
 ```shell
-$sh CleanYourMac.sh
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/liuyuning/CleanYourMac/master/CleanYourMac.sh)"
 ```
 
 #### 2. Part of log:
