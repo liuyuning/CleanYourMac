@@ -2,7 +2,7 @@
 
 # CleanYourMac.sh or DeleteCacheFile.sh
 # Created by liuyuning on 2015/10/16.
-# Copyright © 2015-2021 liuyuning. All rights reserved.
+# Copyright © 2015-2017 liuyuning. All rights reserved.
 
 INFO_BEFORE=$(df -lh)
 
@@ -21,7 +21,7 @@ sudo chmod 1777 /private/var/tmp/
 
 sudo rm -rf /System/Library/Caches/com.apple.coresymbolicationd
 
-# apache log dir
+#apache log dir
 sudo mkdir  /var/log/apache2/
 
 #Asset Catalog Compiler Error
@@ -37,16 +37,24 @@ sudo chmod 755 ~/Library/Logs/
 mkdir -p  ~/Library/Developer/Xcode/
 mv ~/UserData ~/Library/Developer/Xcode/
 
-# GarageBand
+#GarageBand 音乐创作
 #https://www.tekrevue.com/tip/delete-garageband/
 sudo rm -r "/Applications/GarageBand.app" #(1.16GB)
 sudo rm -r "/Library/Application Support/GarageBand" #(995MB)
 sudo rm -r "/Library/Application Support/Logic" #(880MB)
 sudo rm -r "/Library/Audio/Apple Loops" #(up to 10GB)*
 
-# Install Xcode command line
+#安装Xcode插件
 sudo installer -verbose -pkg /Applications/Xcode.app/Contents/Resources/Packages/XcodeSystemResources.pkg -target /
+# xcode-select --switch /Applications/Xcode.app
 # xcode-select --install
+
+
+# JOJO
+rm -rf  ~/Library/Caches/JoJo
+mbox jojo install --clean-install
+
+
 
 echo "==== BEFORE ===="
 echo "${INFO_BEFORE}"
